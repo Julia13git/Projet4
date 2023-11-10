@@ -1,0 +1,59 @@
+/*Variables*/
+$dark-grey: #353535;
+$light-grey: #EAEAEA;
+
+
+/*General*/
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maincontainer {
+    width: 100%;
+    max-width: 767.98px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 113px;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    & img {
+        width: 162px;
+        padding: 14px 89px;
+    }
+}
+
+.location {
+    background-color: $light-grey;
+    color: $dark-grey;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    gap: 17px;
+    &  fa-solid{
+        width: 12px;
+        height: 16px;
+    }
+}
