@@ -10,9 +10,8 @@ body {
 
 .maincontainer {
   width: 100%;
-  max-width: 767.98px;
 }
-@media (max-width: 1440px) {
+@media (min-width: 1024px) {
   .maincontainer {
     width: 100%;
     max-width: 1440px;
@@ -110,6 +109,114 @@ header {
   color: #EAEAEA;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: transparent;
+}
+
+/*section Fonctionnement*/
+.Fonctions {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 26px;
+  padding: 48px 20px 68px 20px;
+}
+@media (min-width: 1024px) {
+  .Fonctions {
+    padding: 50px 180px;
+  }
+}
+.Fonctions .Functionsgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (min-width: 1024px) {
+  .Fonctions .Functionsgroup {
+    flex-direction: row;
+  }
+}
+.Fonctions h2 {
+  margin: 0px;
+}
+.Fonctions button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 73px;
+  gap: 27px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border: transparent;
+}
+.Fonctions .fa-solid {
+  color: #7E7E7E;
+}
+.Fonctions .number {
+  color: #FFF;
+  background: #9356DC;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 17px;
+  flex-shrink: 0;
+}
+
+/*Section Restaurants*/
+.restaurants {
+  padding: 54px 18px 66px 17px;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .title {
+  font-size: 24px;
+}
+.restaurants .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 15px;
+}
+.restaurants .a-card {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}
+.restaurants h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 2px;
+  font-size: 18px;
+}
+.restaurants p {
+  font-size: 17px;
+  margin: 0px;
+}
+.restaurants img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants .cardcontent {
+  background: #FFF;
+  border-radius: 0px 0px 15px 15px;
+  padding: 16px 25px 12px 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+.restaurants .fa-regular {
+  width: 22px;
+  height: 21px;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
