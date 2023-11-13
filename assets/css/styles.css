@@ -1,4 +1,5 @@
 /*Variables*/
+/*Mixins*/
 /*General*/
 body {
   margin: 0;
@@ -11,6 +12,12 @@ body {
   width: 100%;
   max-width: 767.98px;
 }
+@media (max-width: 1440px) {
+  .maincontainer {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
 
 h1 {
   font-family: Roboto;
@@ -20,18 +27,35 @@ h1 {
   line-height: normal;
 }
 
+h2 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 /*Header*/
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 113px;
 }
 
 .logo {
+  background: #FFF;
   display: flex;
   width: 100%;
   justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba 0, 0, 0, 0, 0.15;
 }
 .logo img {
   width: 162px;
@@ -51,6 +75,41 @@ header {
 .location fa-solid {
   width: 12px;
   height: 16px;
+}
+
+/*Infogroup*/
+.infogroup {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 57px;
+}
+.infogroup h2 {
+  padding: 39px 58px 10px 42px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+.infogroup p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 26px 27px 34px;
+  margin: 0;
+}
+.infogroup button {
+  width: 218px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 25px;
+  color: #EAEAEA;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */

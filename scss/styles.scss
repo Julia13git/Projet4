@@ -1,6 +1,15 @@
 /*Variables*/
 $dark-grey: #353535;
+$white:#FFF;
 $light-grey: #EAEAEA;
+$infogroup-color:#F6F6F6;
+$btn-color: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+/*Mixins*/
+@mixin btn-shadow{
+       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+       border: transparent;
+}
 
 
 /*General*/
@@ -14,6 +23,11 @@ body {
 .maincontainer {
     width: 100%;
     max-width: 767.98px;
+
+    @media (max-width: 1440px) {
+        width: 100%;
+        max-width: 1440px;
+    }
 }
 
 h1 {
@@ -24,19 +38,35 @@ h1 {
     line-height: normal;
 }
 
+h2 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+ p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+ }
+
 /*Header*/
 
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 113px;
+    align-items: center;  
 }
 
 .logo {
+    background: $white;
     display: flex;
     width: 100%;
     justify-content: center;
+    box-shadow: 0px 2px 4px 0px rgba (0, 0, 0, 0, 0.15);
     & img {
         width: 162px;
         padding: 14px 89px;
@@ -52,8 +82,42 @@ header {
     justify-content: center;
     align-items: center;  
     gap: 17px;
-    &  fa-solid{
+    &  fa-solid {
         width: 12px;
         height: 16px;
+    }
+}
+
+/*Infogroup*/
+.infogroup {
+    background-color: $infogroup-color;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 57px;
+    & h2 {
+        padding: 39px 58px 10px 42px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    & p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 26px 27px 34px;
+        margin: 0;
+    }
+    & button {
+        width: 218px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        background: $btn-color;
+        border-radius: 25px;
+        color: #EAEAEA;
+       @include btn-shadow;
     }
 }
