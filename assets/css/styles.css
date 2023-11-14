@@ -214,8 +214,7 @@ header {
   gap: 5px;
 }
 .restaurants .fa-regular {
-  width: 22px;
-  height: 21px;
+  font-size: 21px;
   position: relative;
 }
 
