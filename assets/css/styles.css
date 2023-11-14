@@ -257,10 +257,14 @@ header {
   flex-direction: column;
   justify-content: space-between;
   gap: 5px;
+  position: relative;
 }
 .restaurants .fa-regular {
   font-size: 21px;
-  position: relative;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  top: 23px;
 }
 
 /*Footer*/
@@ -271,10 +275,21 @@ footer {
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+}
 footer .footertitle {
   display: flex;
   align-items: center;
   height: 37px;
+}
+@media (min-width: 1024px) {
+  footer .footertitle {
+    align-items: flex-end;
+  }
 }
 footer p {
   color: #FFF;
@@ -301,8 +316,18 @@ footer .footergroup {
   align-items: flex-start;
   gap: 7px;
 }
+@media (min-width: 1024px) {
+  footer .footergroup {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
 footer .light {
   font-weight: 400;
+  width: 130px;
+}
+footer .widewidth {
+  width: 190px;
 }
 
 /*# sourceMappingURL=styles.css.map */

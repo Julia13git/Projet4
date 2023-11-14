@@ -269,10 +269,14 @@ header {
         flex-direction: column;
         justify-content: space-between;
         gap: 5px;
+        position: relative;
     }
     &  .fa-regular {
         font-size: 21px;
-        position: relative;
+        position: absolute;
+        right: 25px;
+        bottom: 33px;
+        top: 23px;
     }
 }
 /*Footer*/
@@ -282,10 +286,17 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    @media (min-width:1024px) {
+        flex-direction: row-reverse;
+        padding: 30px 25px;
+    }
     &  .footertitle{
         display: flex;
         align-items: center;
         height: 37px;
+        @media (min-width:1024px) {
+            align-items: flex-end;
+        }
     }
     &  p{
         color: $white;
@@ -311,8 +322,16 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         gap: 7px;
+        @media (min-width:1024px) {
+            flex-direction: row; 
+            align-items: flex-end;          
+        }
     }
     &  .light{
         font-weight: 400;
+        width: 130px;
+    }
+    &  .widewidth {
+        width: 190px;
     }
 }
