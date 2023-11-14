@@ -1,6 +1,10 @@
 /*Variables*/
 /*Mixins*/
 /*General*/
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -65,6 +69,7 @@ header {
   background-color: #EAEAEA;
   color: #353535;
   width: 100%;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,8 +106,10 @@ header {
 }
 .infogroup button {
   width: 218px;
+  height: 50px;
   display: flex;
   margin: auto;
+  align-items: center;
   justify-content: center;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
@@ -151,6 +158,9 @@ header {
 }
 .Fonctions .fa-solid {
   color: #7E7E7E;
+  position: relative;
+  right: 17px;
+  font-size: 17px;
 }
 .Fonctions .number {
   color: #FFF;
@@ -165,6 +175,10 @@ header {
   right: 17px;
   flex-shrink: 0;
 }
+.Fonctions h1 {
+  position: relative;
+  right: 26px;
+}
 
 /*Section Restaurants*/
 .restaurants {
@@ -172,6 +186,11 @@ header {
   background: #F6F6F6;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 30px 180px;
+  }
 }
 .restaurants .title {
   font-size: 24px;
@@ -183,10 +202,36 @@ header {
   gap: 18px;
   padding-top: 15px;
 }
+@media (min-width: 1024px) {
+  .restaurants .cards {
+    gap: 50px;
+  }
+}
+.restaurants .twocards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurants .twocards {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
 .restaurants .a-card {
   color: inherit;
   text-decoration: none;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .restaurants .a-card {
+    width: 45%;
+  }
+}
+.restaurants .onecard {
+  display: flex;
+  flex-direction: column;
 }
 .restaurants h2 {
   margin-top: 0px;
@@ -216,6 +261,48 @@ header {
 .restaurants .fa-regular {
   font-size: 21px;
   position: relative;
+}
+
+/*Footer*/
+footer {
+  background: #353535;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footertitle {
+  display: flex;
+  align-items: center;
+  height: 37px;
+}
+footer p {
+  color: #FFF;
+  font-family: Shrikhand;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 11px;
+  align-items: center;
+}
+footer .fa-solid {
+  color: #FFF;
+  font-size: 13px;
+}
+footer h1 {
+  color: #FFF;
+}
+footer .footergroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+footer .light {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
