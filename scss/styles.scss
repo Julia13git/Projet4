@@ -314,6 +314,7 @@ header {
             background: $btn-color;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
+            background-clip: text;
             font-weight: bold;
         }
     }
