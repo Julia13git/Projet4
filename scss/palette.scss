@@ -14,6 +14,11 @@ $green-text: #008766;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     border: transparent;
 }
+@mixin btn-shadow{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border: transparent;
+}
+
 
 
 /*General*/
@@ -81,15 +86,20 @@ section{
         margin: auto;
         max-width: 1055px;
         padding: 35px 17px;
+        @media (min-width:1024px){
+            padding: 50px 210px;
+        }
     }
 
     &  .sousmenu{
         display: flex;
         justify-content: space-between;
         align-items: center;
-                   
+        @media (min-width:1024px){
+            justify-content: center;
+            gap: 25px;
+        }          
     }
-
     &  .title{        
         font-family: Shrikhand;
         font-size: 28px;
@@ -142,19 +152,19 @@ section{
         justify-content: space-between;
     }
     &  h2{
-        overflow: hidden;
+        /*overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: nowrap;*/
         font-family: Roboto;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
     }
     &  h3{
-        overflow: hidden;
+        /*overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        white-space: nowrap;*/
         font-family: Roboto;
         font-size: 15px;
         font-style: normal;
@@ -168,5 +178,80 @@ section{
     &  .bold{
         color: $dark-grey;
         font-weight: 700;
+    }
+    & button {
+        width: 218px;
+        height: 50px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        background: $btn-color;
+        border-radius: 25px;
+        color: $white;
+        font-family: Roboto;
+        font-size: 16px;
+       @include btn-shadow;
+    }
+}
+/*Footer*/
+footer{
+    background: #353535;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media (min-width:1024px) {
+        flex-direction: row-reverse;
+        padding: 30px 25px;
+    }
+    &  .footertitle{
+        display: flex;
+        align-items: center;
+        height: 37px;
+        @media (min-width:1024px) {
+            align-items: flex-end;
+        }
+    }
+    &  p{
+        color: $white;
+        font-family: Shrikhand;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    &  div{
+        display: flex;
+        justify-content: flex-start;
+        gap: 11px;
+        align-items: center;
+    }
+    &  .fa-solid{
+        color: $white;
+        font-size: 13px;
+    }    
+    &  h1{
+        color: $white;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &  .footergroup{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        @media (min-width:1024px) {
+            flex-direction: row; 
+            align-items: flex-end;          
+        }
+    }
+    &  .light{
+        font-weight: 400;
+        width: 130px;
+    }
+    &  .widewidth {
+        width: 190px;
     }
 }
