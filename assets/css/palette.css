@@ -44,6 +44,7 @@ section {
   display: flex;
   flex-direction: column;
   background: #FFF;
+  margin-bottom: -40px;
 }
 section img {
   width: 100%;
@@ -136,9 +137,6 @@ section .dish {
   justify-content: space-between;
 }
 section h2 {
-  /*overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;*/
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -146,9 +144,6 @@ section h2 {
   line-height: normal;
 }
 section h3 {
-  /*overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;*/
   font-family: Roboto;
   font-size: 15px;
   font-style: normal;
@@ -182,21 +177,27 @@ section button {
 /*Footer*/
 footer {
   background: #353535;
+}
+footer .footerzone {
   padding: 22px 25px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 1440px;
+  align-items: flex-start;
 }
 @media (min-width: 1024px) {
-  footer {
+  footer .footerzone {
     flex-direction: row-reverse;
     padding: 30px 25px;
+    margin: auto;
   }
 }
 footer .footertitle {
   display: flex;
   align-items: center;
   height: 37px;
+  width: 136px;
 }
 @media (min-width: 1024px) {
   footer .footertitle {

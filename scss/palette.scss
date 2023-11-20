@@ -66,6 +66,7 @@ section{
     display: flex;
     flex-direction: column;
     background: $white;
+    margin-bottom: -40px;
     &  img{
         width: 100%;
         object-fit: cover;
@@ -90,7 +91,6 @@ section{
             padding: 50px 210px;
         }
     }
-
     &  .sousmenu{
         display: flex;
         justify-content: space-between;
@@ -152,9 +152,6 @@ section{
         justify-content: space-between;
     }
     &  h2{
-        /*overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;*/
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
@@ -162,9 +159,6 @@ section{
         line-height: normal;
     }
     &  h3{
-        /*overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;*/
         font-family: Roboto;
         font-size: 15px;
         font-style: normal;
@@ -194,21 +188,28 @@ section{
        @include btn-shadow;
     }
 }
+
 /*Footer*/
 footer{
-    background: #353535;
-    padding: 22px 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    @media (min-width:1024px) {
-        flex-direction: row-reverse;
-        padding: 30px 25px;
-    }
+    background: #353535; 
+    &  .footerzone{
+        padding: 22px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 1440px;
+        align-items: flex-start;
+        @media (min-width:1024px) {
+            flex-direction: row-reverse;
+            padding: 30px 25px;
+            margin: auto;
+        }
+    }   
     &  .footertitle{
         display: flex;
         align-items: center;
         height: 37px;
+        width: 136px;
         @media (min-width:1024px) {
             align-items: flex-end;
         }
