@@ -184,7 +184,8 @@ footer .footerzone {
   flex-direction: column;
   gap: 16px;
   max-width: 1440px;
-  align-items: flex-start;
+  align-items: flex-end;
+  height: 37px;
 }
 @media (min-width: 1024px) {
   footer .footerzone {
@@ -196,7 +197,6 @@ footer .footerzone {
 footer .footertitle {
   display: flex;
   align-items: center;
-  height: 37px;
   width: 136px;
 }
 @media (min-width: 1024px) {

@@ -198,7 +198,8 @@ footer{
         flex-direction: column;
         gap: 16px;
         max-width: 1440px;
-        align-items: flex-start;
+        align-items: flex-end;
+        height: 37px;
         @media (min-width:1024px) {
             flex-direction: row-reverse;
             padding: 30px 25px;
@@ -208,7 +209,6 @@ footer{
     &  .footertitle{
         display: flex;
         align-items: center;
-        height: 37px;
         width: 136px;
         @media (min-width:1024px) {
             align-items: flex-end;
