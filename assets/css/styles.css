@@ -20,7 +20,7 @@ body {
   background-color: #FFF;
   inset: 0;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.8;
   animation: disappear 1s 3s ease-out forwards;
   transform-origin: center;
   height: 100hv;
@@ -278,18 +278,16 @@ header {
     gap: 100px;
   }
 }
-.restaurants .a-card {
-  width: 100%;
-}
-@media (min-width: 1024px) {
-  .restaurants .a-card {
-    width: 45%;
-  }
-}
 .restaurants .onecard {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .restaurants .onecard {
+    width: 45%;
+  }
 }
 .restaurants h2 {
   margin-top: 0px;
