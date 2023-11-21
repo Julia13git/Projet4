@@ -28,7 +28,7 @@ body {
 }
 @keyframes disappear {
   to {
-    opacity: 0;
+    transform: scale(0);
   }
 }
 .loader div {

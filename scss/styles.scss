@@ -50,7 +50,7 @@ body {
     width: 100%;
   @keyframes disappear {
     to {
-        opacity: 0;
+        transform: scale(0);
     }
   }
     & div {
