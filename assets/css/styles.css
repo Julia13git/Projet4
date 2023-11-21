@@ -12,6 +12,67 @@ body {
   justify-content: center;
 }
 
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #99E2D0;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
 a {
   all: unset;
   cursor: pointer;
@@ -116,8 +177,14 @@ header {
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 25px;
   color: #EAEAEA;
+  cursor: pointer;
+  transition: background 300ms ease-out;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: transparent;
+}
+.infogroup button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*section Fonctionnement*/
@@ -247,6 +314,7 @@ header {
   margin: 0px;
 }
 .restaurants .new {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   color: #008766;
   font-size: 14px;
   background: #99E2D0;
