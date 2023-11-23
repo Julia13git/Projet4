@@ -31,6 +31,17 @@ body {
     transform: scale(0);
   }
 }
+.loader .fork {
+  color: #008766;
+  font-size: 25px;
+  transform: rotate(1turn);
+  transition: transform 500ms ease-in-out;
+  /*@keyframes rotate {
+  to {
+      transform: rotate(360deg);
+  }    
+  }*/
+}
 .loader div {
   box-sizing: border-box;
   display: block;

@@ -126,6 +126,13 @@ section .dishgroup {
   justify-content: space-between;
   gap: 12px;
 }
+section .dishtitle {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 section .dish {
   background: #FFF;
   padding: 15px;

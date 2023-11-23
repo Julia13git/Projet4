@@ -53,6 +53,17 @@ body {
         transform: scale(0);
     }
   }
+    &  .fork{
+        color: $green-text;
+        font-size: 25px;
+        transform: rotate(1turn);
+        transition: transform 500ms ease-in-out;
+        /*@keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }    
+        }*/
+    }
     & div {
     box-sizing: border-box;
     display: block;
