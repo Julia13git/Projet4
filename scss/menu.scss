@@ -145,19 +145,25 @@ section{
         gap: 12px;
     }
     &  .dishtitle{
-        width: 80%;
-        /*overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        padding: 15px;*/
+        width: 75%;
+        /*padding: 15px;*/
     }
     &  .dish{
         background: $white;
-        padding: 15px;
+        width: 100%;
         @include btn-fonction;
         display: flex;
         flex-direction: row;
+        &:hover .checkblock{
+            width: 59px;
+            visibility: visible;
+        }
+    }
+    &  .dishcontent{
+        display: flex;
         justify-content: space-between;
+        padding: 15px;
+        width: 100%;
     }
     &  h3{
         font-family: Roboto;
@@ -184,21 +190,23 @@ section{
         align-items: flex-end;
         /*padding-bottom: 15px;
         padding-right: 15px;*/
+        width: 26px;
+    
     }
-    /*&  .checkblock{
+    &  .checkblock{
         display: flex;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
         background: $green;
-        width: 59px;
+        width: 0%;
         border-radius: 0 20px 20px 0;
         font-size: 20px;
         color: $white;
-    transition:check 250ms ease-out;
-        &:hover {
-            transform: check;
-        }*/
+        visibility: hidden;
+        transition: width 250ms ease-out;
         
+    }   
 
     &  .bold{
         color: $dark-grey;

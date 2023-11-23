@@ -45,19 +45,6 @@ section {
   flex-direction: column;
   background: #FFF;
   margin-bottom: -40px;
-  /*&  .checkblock{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: $green;
-      width: 59px;
-      border-radius: 0 20px 20px 0;
-      font-size: 20px;
-      color: $white;
-  transition:check 250ms ease-out;
-      &:hover {
-          transform: check;
-      }*/
 }
 section img {
   width: 100%;
@@ -140,21 +127,27 @@ section .dishgroup {
   gap: 12px;
 }
 section .dishtitle {
-  width: 80%;
-  /*overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 15px;*/
+  width: 75%;
+  /*padding: 15px;*/
 }
 section .dish {
   background: #FFF;
-  padding: 15px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border: transparent;
   display: flex;
   flex-direction: row;
+}
+section .dish:hover .checkblock {
+  width: 59px;
+  visibility: visible;
+}
+section .dishcontent {
+  display: flex;
   justify-content: space-between;
+  padding: 15px;
+  width: 100%;
 }
 section h3 {
   font-family: Roboto;
@@ -181,6 +174,20 @@ section .price {
   align-items: flex-end;
   /*padding-bottom: 15px;
   padding-right: 15px;*/
+  width: 26px;
+}
+section .checkblock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: #99E2D0;
+  width: 0%;
+  border-radius: 0 20px 20px 0;
+  font-size: 20px;
+  color: #FFF;
+  visibility: hidden;
+  transition: width 250ms ease-out;
 }
 section .bold {
   color: #353535;
