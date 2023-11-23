@@ -119,7 +119,7 @@ section{
             font-weight: bold;
         }
     }
-    &  p{
+    &  h2{
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -145,11 +145,11 @@ section{
         gap: 12px;
     }
     &  .dishtitle{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
+        width: 80%;
+        /*overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        padding: 15px;*/
     }
     &  .dish{
         background: $white;
@@ -159,24 +159,47 @@ section{
         flex-direction: row;
         justify-content: space-between;
     }
-    &  h2{
+    &  h3{
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
-    &  h3{
+    &  p{
         font-family: Roboto;
         font-size: 15px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &  .price{
         display: flex;
-        align-items: flex-end ;
+        align-items: flex-end;
+        /*padding-bottom: 15px;
+        padding-right: 15px;*/
     }
+    /*&  .checkblock{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $green;
+        width: 59px;
+        border-radius: 0 20px 20px 0;
+        font-size: 20px;
+        color: $white;
+    transition:check 250ms ease-out;
+        &:hover {
+            transform: check;
+        }*/
+        
+
     &  .bold{
         color: $dark-grey;
         font-weight: 700;

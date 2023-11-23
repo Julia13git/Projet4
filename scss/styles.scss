@@ -242,15 +242,15 @@ header {
         height: 73px;
         gap: 27px;
         @include btn-fonction;
+        &:hover .fa-solid{
+            color: $primaire;
+    }
     }       
     & .fa-solid {
         color: $grey-icon;
         position: relative;
         right: 17px;
-        font-size: 17px;
-        &:hover {
-            color: $primaire;
-        }
+        font-size: 17px;        
     }
     & .number {
         color: $white;

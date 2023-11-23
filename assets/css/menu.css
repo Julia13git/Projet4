@@ -45,6 +45,19 @@ section {
   flex-direction: column;
   background: #FFF;
   margin-bottom: -40px;
+  /*&  .checkblock{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $green;
+      width: 59px;
+      border-radius: 0 20px 20px 0;
+      font-size: 20px;
+      color: $white;
+  transition:check 250ms ease-out;
+      &:hover {
+          transform: check;
+      }*/
 }
 section img {
   width: 100%;
@@ -101,7 +114,7 @@ section .heart:hover {
   background-clip: text;
   font-weight: bold;
 }
-section p {
+section h2 {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -127,11 +140,11 @@ section .dishgroup {
   gap: 12px;
 }
 section .dishtitle {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  width: 80%;
+  /*overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 15px;*/
 }
 section .dish {
   background: #FFF;
@@ -143,23 +156,31 @@ section .dish {
   flex-direction: row;
   justify-content: space-between;
 }
-section h2 {
+section h3 {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-section h3 {
+section p {
   font-family: Roboto;
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 section .price {
   display: flex;
   align-items: flex-end;
+  /*padding-bottom: 15px;
+  padding-right: 15px;*/
 }
 section .bold {
   color: #353535;

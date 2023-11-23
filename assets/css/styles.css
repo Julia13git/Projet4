@@ -224,14 +224,14 @@ header {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border: transparent;
 }
+.Fonctions button:hover .fa-solid {
+  color: #9356DC;
+}
 .Fonctions .fa-solid {
   color: #7E7E7E;
   position: relative;
   right: 17px;
   font-size: 17px;
-}
-.Fonctions .fa-solid:hover {
-  color: #9356DC;
 }
 .Fonctions .number {
   color: #FFF;
