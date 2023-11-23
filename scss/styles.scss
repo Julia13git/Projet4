@@ -43,8 +43,8 @@ body {
     background-color: $white;
     inset: 0;
     z-index: 1;
-    opacity: 0.8;
-    animation: disappear 1s 3s ease-out forwards;
+    opacity: 0.9;
+    animation: disappear 1ms 3s ease-out forwards;
     transform-origin: center;
     height: 100hv;
     width: 100%;
@@ -57,8 +57,8 @@ body {
     box-sizing: border-box;
     display: block;
     position: absolute;
-    width: 164px;
-    height: 164px;
+    width: 80px;
+    height: 80px;
     margin: 8px;
     border: 10px solid $green;
     border-radius: 50%;
@@ -293,11 +293,6 @@ header {
             gap: 100px;
         }
     }
-    
-    &  .a-card {
-       
-        
-    }
     &  .onecard {
         display: flex;
         flex-direction: column;
@@ -331,7 +326,6 @@ header {
         position: absolute;
         top: 13px;
         right: 15px;
-        z-index: 1;
     }
     &  img {
         width: 100%;
