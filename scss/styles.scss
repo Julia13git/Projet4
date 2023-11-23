@@ -56,9 +56,9 @@ body {
     &  .fork{
         color: $green-text;
         font-size: 25px;
-        transform: rotate(1turn);
+        /*transform: rotate(1turn);
         transition: transform 500ms ease-in-out;
-        /*@keyframes rotate {
+        @keyframes rotate {
         to {
             transform: rotate(360deg);
         }    
