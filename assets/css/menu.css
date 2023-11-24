@@ -45,6 +45,59 @@ section {
   flex-direction: column;
   background: #FFF;
   margin-bottom: -40px;
+  /*&  .dishgroup:nth-child(1){
+      animation-delay: 0s;
+  }
+  &  .dishgroup:nth-child(2){
+      animation-delay: 1s;
+  }
+  &  .entrees .dishgroup:nth-child(3){
+      animation-delay: 2s;
+  }
+  &  .dishgroup:nth-child(4){
+      animation-delay: 3s;
+  }
+  &  .dishgroup:nth-child(5){
+      animation-delay: 4s;
+  }
+  &  .dishgroup:nth-child(6){
+      animation-delay: 5s;
+  }
+  &  .dishgroup:nth-child(7){
+      animation-delay: 6s;
+  }
+  &  .dishgroup:nth-child(8){
+      animation-delay: 7s;
+  }
+  &  .dishgroup:nth-child(9){
+      animation-delay: 8s;
+  }
+  &  .dishgroup:nth-child(10){
+      animation-delay: 9s;
+  }
+  @keyframes appearance {
+      from {opacity: 0;}
+      to {opacity: 1;}
+
+  }*/
+  /*&  .dish div:nth-child(5){
+      animation-delay: 1s;
+  }
+  &  .dish:nth-child(6){
+      animation-delay: 1.25s;
+  }
+  &  .dish:nth-child(7){
+      animation-delay: 1.5s;
+  }
+  &  .dish:nth-child(8){
+      animation-delay: 1.75s;
+  }
+  &  .dish:nth-child(9){
+      animation-delay: 2s;
+  }
+  &  .dish:nth-child(10){
+      animation-delay: 2.25s;
+  }*/
 }
 section img {
   width: 100%;
@@ -52,7 +105,7 @@ section img {
   position: relative;
   height: 275px;
 }
-section .menu {
+section .menucard {
   box-sizing: border-box;
   background: #F6F6F6;
   border-radius: 45px 45px 0px 0px;
@@ -68,7 +121,7 @@ section .menu {
   padding: 35px 17px;
 }
 @media (min-width: 1024px) {
-  section .menu {
+  section .menucard {
     padding: 50px 210px;
   }
 }
@@ -109,51 +162,11 @@ section h2 {
   line-height: normal;
   text-transform: uppercase;
 }
-section .entrees {
+section .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  opacity: 0;
-  animation: appearance 2s forwards linear;
-}
-section .entrees:nth-child(1) {
-  animation-delay: 0s;
-}
-section .entrees:nth-child(2) {
-  animation-delay: 1s;
-}
-section .entrees:nth-child(3) {
-  animation-delay: 2s;
-}
-section .entrees:nth-child(4) {
-  animation-delay: 3s;
-}
-section .entrees:nth-child(5) {
-  animation-delay: 4s;
-}
-section .entrees:nth-child(6) {
-  animation-delay: 5s;
-}
-section .entrees:nth-child(7) {
-  animation-delay: 6s;
-}
-section .entrees:nth-child(8) {
-  animation-delay: 7s;
-}
-section .entrees:nth-child(9) {
-  animation-delay: 8s;
-}
-section .entrees:nth-child(10) {
-  animation-delay: 9s;
-}
-@keyframes appearance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 section .line {
   width: 40px;
@@ -165,46 +178,8 @@ section .dishgroup {
   flex-flow: column;
   justify-content: space-between;
   gap: 12px;
-  opacity: 0;
-  animation: appearance 2s forwards linear;
-}
-section .entrees:nth-child(1) {
-  animation-delay: 0s;
-}
-section .entrees:nth-child(2) {
-  animation-delay: 1s;
-}
-section .entrees:nth-child(3) {
-  animation-delay: 2s;
-}
-section .dish:nth-child(4) {
-  animation-delay: 3s;
-}
-section .entrees:nth-child(5) {
-  animation-delay: 4s;
-}
-section .entrees:nth-child(6) {
-  animation-delay: 5s;
-}
-section .entrees:nth-child(7) {
-  animation-delay: 6s;
-}
-section .entrees:nth-child(8) {
-  animation-delay: 7s;
-}
-section .entrees:nth-child(9) {
-  animation-delay: 8s;
-}
-section .entrees:nth-child(10) {
-  animation-delay: 9s;
-}
-@keyframes appearance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  /*opacity:0;
+  animation: appearance 2s forwards linear;*/
 }
 section .dishtitle {
   width: 82%;
@@ -217,10 +192,32 @@ section .dish {
   border: transparent;
   display: flex;
   flex-direction: row;
+  /*opacity:0;*/
+  animation: appearance 1s both linear;
 }
 section .dish:hover .checkblock {
   width: 59px;
   visibility: visible;
+}
+section .dish:nth-child(1) {
+  animation-delay: 0s;
+}
+section .dish:nth-child(2) {
+  animation-delay: 0.25s;
+}
+section .dish:nth-child(3) {
+  animation-delay: 0.5s;
+}
+section .dish:nth-child(4) {
+  animation-delay: 0.75s;
+}
+@keyframes appearance {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 section .dishcontent {
   display: flex;
