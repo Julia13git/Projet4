@@ -145,8 +145,7 @@ section{
         gap: 12px;
     }
     &  .dishtitle{
-        width: 75%;
-        /*padding: 15px;*/
+        width: 82%;
     }
     &  .dish{
         background: $white;
@@ -161,9 +160,10 @@ section{
     }
     &  .dishcontent{
         display: flex;
-        justify-content: space-between;
         padding: 15px;
         width: 100%;
+        position: relative;
+        overflow: auto;
     }
     &  h3{
         font-family: Roboto;
@@ -188,9 +188,10 @@ section{
     &  .price{
         display: flex;
         align-items: flex-end;
-        /*padding-bottom: 15px;
-        padding-right: 15px;*/
         width: 26px;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
     
     }
     &  .checkblock{
