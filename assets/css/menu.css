@@ -1,4 +1,25 @@
 /*Variables-colors*/
+/*Variables-colors*/
+/*$dark-grey: #353535;
+$white:#FFF;
+$light-grey: #EAEAEA;
+$infogroup-color:#F6F6F6;
+$btn-color-start: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+$btn-color-end: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+$grey-icon: #7E7E7E;
+$primaire: #9356DC;
+$green: #99E2D0;
+$green-text: #008766;
+
+@mixin btn-fonction {
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border: transparent;
+}
+@mixin btn-shadow{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border: transparent;
+}*/
 /*General*/
 * {
   margin: 0;
@@ -45,41 +66,6 @@ section {
   flex-direction: column;
   background: #FFF;
   margin-bottom: -40px;
-  /*&  .dishgroup:nth-child(1){
-      animation-delay: 0s;
-  }
-  &  .dishgroup:nth-child(2){
-      animation-delay: 1s;
-  }
-  &  .entrees .dishgroup:nth-child(3){
-      animation-delay: 2s;
-  }
-  &  .dishgroup:nth-child(4){
-      animation-delay: 3s;
-  }
-  &  .dishgroup:nth-child(5){
-      animation-delay: 4s;
-  }
-  &  .dishgroup:nth-child(6){
-      animation-delay: 5s;
-  }
-  &  .dishgroup:nth-child(7){
-      animation-delay: 6s;
-  }
-  &  .dishgroup:nth-child(8){
-      animation-delay: 7s;
-  }
-  &  .dishgroup:nth-child(9){
-      animation-delay: 8s;
-  }
-  &  .dishgroup:nth-child(10){
-      animation-delay: 9s;
-  }
-  @keyframes appearance {
-      from {opacity: 0;}
-      to {opacity: 1;}
-
-  }*/
   /*&  .dish div:nth-child(5){
       animation-delay: 1s;
   }
@@ -178,8 +164,6 @@ section .dishgroup {
   flex-flow: column;
   justify-content: space-between;
   gap: 12px;
-  /*opacity:0;
-  animation: appearance 2s forwards linear;*/
 }
 section .dishtitle {
   width: 82%;
@@ -193,7 +177,7 @@ section .dish {
   display: flex;
   flex-direction: row;
   /*opacity:0;*/
-  animation: appearance 1s both linear;
+  animation: appearance 1s both ease-in-out;
 }
 section .dish:hover .checkblock {
   width: 59px;
@@ -213,10 +197,10 @@ section .dish:nth-child(4) {
 }
 @keyframes appearance {
   from {
-    scale: 0;
+    opacity: 0;
   }
   to {
-    scale: 1;
+    opacity: 1;
   }
 }
 section .dishcontent {

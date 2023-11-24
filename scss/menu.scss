@@ -1,5 +1,6 @@
 /*Variables-colors*/
-$dark-grey: #353535;
+@import 'variables';
+/*$dark-grey: #353535;
 $white:#FFF;
 $light-grey: #EAEAEA;
 $infogroup-color:#F6F6F6;
@@ -18,7 +19,7 @@ $green-text: #008766;
 @mixin btn-shadow{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     border: transparent;
-}
+}*/
 
 
 
@@ -133,7 +134,6 @@ section{
         justify-content: space-between;
         gap: 12px;
     }
-   
     &  .line{
         width: 40px;
         height: 3px;
@@ -144,45 +144,7 @@ section{
         flex-flow: column;
         justify-content: space-between;
         gap: 12px;
-        /*opacity:0;
-        animation: appearance 2s forwards linear;*/
-
     }
-    /*&  .dishgroup:nth-child(1){
-        animation-delay: 0s;
-    }
-    &  .dishgroup:nth-child(2){
-        animation-delay: 1s;
-    }
-    &  .entrees .dishgroup:nth-child(3){
-        animation-delay: 2s;
-    }
-    &  .dishgroup:nth-child(4){
-        animation-delay: 3s;
-    }
-    &  .dishgroup:nth-child(5){
-        animation-delay: 4s;
-    }
-    &  .dishgroup:nth-child(6){
-        animation-delay: 5s;
-    }
-    &  .dishgroup:nth-child(7){
-        animation-delay: 6s;
-    }
-    &  .dishgroup:nth-child(8){
-        animation-delay: 7s;
-    }
-    &  .dishgroup:nth-child(9){
-        animation-delay: 8s;
-    }
-    &  .dishgroup:nth-child(10){
-        animation-delay: 9s;
-    }
-    @keyframes appearance {
-        from {opacity: 0;}
-        to {opacity: 1;}
-        
-    }*/
     &  .dishtitle{
         width: 82%;
     }
@@ -193,8 +155,7 @@ section{
         display: flex;
         flex-direction: row;
         /*opacity:0;*/
-        animation: appearance 1s both linear;
-        
+        animation: appearance 1s both ease-in-out;
         &:hover .checkblock{
             width: 59px;
             visibility: visible;
@@ -231,11 +192,10 @@ section{
             animation-delay: 2.25s;
         }*/
         @keyframes appearance {
-            from {scale: 0;}
-            to {scale: 1;}
+            from {opacity: 0;}
+            to {opacity: 1;}
             
         }
-   
     &  .dishcontent{
         display: flex;
         padding: 15px;
@@ -270,7 +230,6 @@ section{
         position: absolute;
         right: 15px;
         bottom: 15px;
-    
     }
     &  .checkblock{
         display: flex;
@@ -284,9 +243,7 @@ section{
         color: $white;
         visibility: hidden;
         transition: width 250ms ease-out;
-        
     }   
-
     &  .bold{
         color: $dark-grey;
         font-weight: 700;
