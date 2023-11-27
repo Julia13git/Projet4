@@ -1,27 +1,5 @@
 /*Variables-colors*/
 @import 'variables';
-/*$dark-grey: #353535;
-$white:#FFF;
-$light-grey: #EAEAEA;
-$infogroup-color:#F6F6F6;
-$btn-color-start: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-$btn-color-end: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-$grey-icon: #7E7E7E;
-$primaire: #9356DC;
-$green: #99E2D0;
-$green-text: #008766;
-
-@mixin btn-fonction {
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    border: transparent;
-}
-@mixin btn-shadow{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    border: transparent;
-}*/
-
-
 
 /*General*/
 *{
@@ -173,24 +151,6 @@ section{
         &  .dish:nth-child(4){
             animation-delay: 0.75s;
         }
-        /*&  .dish div:nth-child(5){
-            animation-delay: 1s;
-        }
-        &  .dish:nth-child(6){
-            animation-delay: 1.25s;
-        }
-        &  .dish:nth-child(7){
-            animation-delay: 1.5s;
-        }
-        &  .dish:nth-child(8){
-            animation-delay: 1.75s;
-        }
-        &  .dish:nth-child(9){
-            animation-delay: 2s;
-        }
-        &  .dish:nth-child(10){
-            animation-delay: 2.25s;
-        }*/
         @keyframes appearance {
             from {opacity: 0;}
             to {opacity: 1;}
