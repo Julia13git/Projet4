@@ -68,9 +68,10 @@ section .menucard {
   max-width: 1055px;
   padding: 35px 17px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   section .menucard {
-    padding: 50px 210px;
+    width: 90%;
+    padding: 50px 30px;
   }
 }
 section .sousmenu {
@@ -260,22 +261,28 @@ footer .footerzone {
   max-width: 1440px;
   align-items: flex-start;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer .footerzone {
     flex-direction: row-reverse;
     padding: 30px 25px;
-    margin: auto;
     align-items: flex-end;
+    gap: 25px;
     height: 37px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footerzone {
+    flex-direction: row-reverse;
+    margin: auto;
   }
 }
 footer .footertitle {
   display: flex;
   align-items: center;
-  width: 136px;
 }
 @media (min-width: 1024px) {
   footer .footertitle {
+    width: 136px;
     align-items: flex-end;
   }
 }
@@ -309,7 +316,7 @@ footer .footergroup {
   align-items: flex-start;
   gap: 7px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer .footergroup {
     flex-direction: row;
     align-items: flex-end;
@@ -317,10 +324,16 @@ footer .footergroup {
 }
 footer .light {
   font-weight: 400;
-  width: 130px;
 }
-footer .widewidth {
-  width: 190px;
+@media (min-width: 1024px) {
+  footer .light {
+    width: 130px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .widewidth {
+    width: 190px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

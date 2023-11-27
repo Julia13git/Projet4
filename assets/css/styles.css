@@ -417,14 +417,12 @@ footer .footerzone {
 @media (min-width: 1024px) {
   footer .footerzone {
     flex-direction: row-reverse;
-    /*padding: 30px 25px;*/
     margin: auto;
   }
 }
 footer .footertitle {
   display: flex;
   align-items: center;
-  /*width: 136px;*/
 }
 @media (min-width: 1024px) {
   footer .footertitle {
