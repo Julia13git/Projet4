@@ -77,25 +77,25 @@ a {
 
 h1 {
   font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-h2 {
-  font-family: Roboto;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-p {
+h2 {
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
+  line-height: normal;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -145,14 +145,14 @@ header {
   padding-bottom: 55px;
   padding-top: 40px;
 }
-.infogroup h2 {
+.infogroup h1 {
   padding-bottom: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 0;
 }
-.infogroup p {
+.infogroup h2 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -160,6 +160,13 @@ header {
   margin: 0;
 }
 .infogroup button {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: transparent;
   width: 218px;
   height: 50px;
   display: flex;
@@ -171,8 +178,6 @@ header {
   color: #EAEAEA;
   cursor: pointer;
   transition: background 300ms ease-out;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  border: transparent;
 }
 .infogroup button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -203,10 +208,15 @@ header {
     justify-content: space-between;
   }
 }
-.Fonctions h2 {
+.Fonctions h1 {
   margin: 0px;
 }
-.Fonctions button {
+.Fonctions .functionbtn {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -217,7 +227,7 @@ header {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border: transparent;
 }
-.Fonctions button:hover .fa-solid {
+.Fonctions .functionbtn:hover .fa-solid {
   color: #9356DC;
 }
 .Fonctions .fa-solid {
@@ -239,7 +249,7 @@ header {
   right: 17px;
   flex-shrink: 0;
 }
-.Fonctions h1 {
+.Fonctions p {
   position: relative;
   right: 26px;
 }
@@ -293,7 +303,7 @@ header {
     width: 45%;
   }
 }
-.restaurants h2 {
+.restaurants h1 {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 2px;
@@ -301,11 +311,17 @@ header {
 }
 .restaurants p {
   font-size: 17px;
+  font-weight: 300;
   margin: 0px;
 }
 .restaurants .new {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   color: #008766;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-size: 14px;
   background: #99E2D0;
   width: 80px;
@@ -397,6 +413,8 @@ footer .fa-solid {
   font-size: 13px;
 }
 footer h1 {
+  font-size: 16px;
+  font-weight: 500;
   color: #FFF;
 }
 footer .footergroup {
