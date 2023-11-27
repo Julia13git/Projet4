@@ -202,13 +202,18 @@ header {
   max-width: 1120px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  .Fonctions {
+    padding: 50px 75px;
+  }
+}
 .Fonctions .Functionsgroup {
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding-left: 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .Fonctions .Functionsgroup {
     flex-direction: row;
     justify-content: space-between;
@@ -257,7 +262,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 17px;
+  right: 11px;
   flex-shrink: 0;
 }
 .Fonctions p {
@@ -277,6 +282,11 @@ header {
   flex-direction: column;
   padding: 50px 20px;
 }
+@media (min-width: 768px) {
+  .restaurants {
+    padding: 50px 75px;
+  }
+}
 .restaurants .title {
   padding-left: 3px;
 }
@@ -287,6 +297,11 @@ header {
   gap: 20px;
   max-width: 1080px;
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .restaurants .cards {
+    gap: 35px;
+  }
 }
 @media (min-width: 1024px) {
   .restaurants .cards {
@@ -300,6 +315,12 @@ header {
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
+}
+@media (min-width: 768px) {
+  .restaurants .twocards {
+    flex-direction: row;
+    gap: 35px;
+  }
 }
 @media (min-width: 1024px) {
   .restaurants .twocards {
@@ -384,22 +405,30 @@ footer .footerzone {
   max-width: 1440px;
   align-items: flex-start;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer .footerzone {
     flex-direction: row-reverse;
     padding: 30px 25px;
-    margin: auto;
     align-items: flex-end;
+    gap: 25px;
     height: 37px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footerzone {
+    flex-direction: row-reverse;
+    /*padding: 30px 25px;*/
+    margin: auto;
   }
 }
 footer .footertitle {
   display: flex;
   align-items: center;
-  width: 136px;
+  /*width: 136px;*/
 }
 @media (min-width: 1024px) {
   footer .footertitle {
+    width: 136px;
     align-items: flex-end;
   }
 }
@@ -433,18 +462,24 @@ footer .footergroup {
   align-items: flex-start;
   gap: 7px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer .footergroup {
     flex-direction: row;
     align-items: flex-end;
   }
 }
+@media (min-width: 1024px) {
+  footer .widewidth {
+    width: 190px;
+  }
+}
 footer .light {
   font-weight: 400;
-  width: 130px;
 }
-footer .widewidth {
-  width: 190px;
+@media (min-width: 1024px) {
+  footer .light {
+    width: 130px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
