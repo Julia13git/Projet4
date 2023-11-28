@@ -378,14 +378,15 @@ header {
   gap: 5px;
   position: relative;
 }
-.restaurants .fa-regular {
+.restaurants .heart {
   font-size: 21px;
   position: absolute;
   right: 25px;
   top: 23px;
   cursor: pointer;
+  transition: background 300ms ease-out;
 }
-.restaurants .fa-regular:hover {
+.restaurants .heart:hover {
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -454,14 +455,14 @@ footer p {
   line-height: normal;
   color: #FFF;
 }
-footer .footergroup {
+footer .footerlist {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 7px;
 }
 @media (min-width: 768px) {
-  footer .footergroup {
+  footer .footerlist {
     flex-direction: row;
     align-items: flex-end;
   }

@@ -175,7 +175,6 @@ header {
         color: $light-grey;
         cursor: pointer;
         transition: background 300ms ease-out;
-       
         &:hover{
           background: $btn-color-end;  
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
@@ -336,12 +335,13 @@ header {
         gap: 5px;
         position: relative;
     }
-    &  .fa-regular {
+    &  .heart {
         font-size: 21px;
         position: absolute;
         right: 25px;
         top: 23px;
         cursor: pointer;
+        transition:background 300ms ease-out;
         &:hover {
             background: $btn-color-start;
             -webkit-text-fill-color: transparent;
@@ -402,7 +402,7 @@ footer{
         @include btn-text;
         color: $white;
     }
-    &  .footergroup{
+    &  .footerlist{
         display: flex;
         flex-direction: column;
         align-items: flex-start;

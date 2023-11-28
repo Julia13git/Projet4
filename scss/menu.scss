@@ -170,11 +170,7 @@ section{
         overflow: auto;
     }
     &  h3{
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+        @include btn-text;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -224,10 +220,9 @@ section{
         background: $btn-color-start;
         border-radius: 25px;
         color: $white;
-        font-family: Roboto;
-        font-size: 16px;
         transition: background 300ms ease-out;
         cursor: pointer;
+       @include btn-text;
        @include btn-shadow;
        &:hover{
         background: $btn-color-end;  
@@ -286,7 +281,7 @@ footer{
         color: $white;
         @include btn-text;
     }
-    &  .footergroup{
+    &  .footerlist{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
