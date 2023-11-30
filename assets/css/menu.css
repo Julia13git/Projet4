@@ -46,6 +46,19 @@ section {
   flex-direction: column;
   background: #FFF;
   margin-bottom: -40px;
+  /* &  div:nth-child(1){
+      animation-delay: 0s;
+  }
+  &  div:nth-child(2){
+      animation-delay: 0.25s;
+  }
+  &  div:nth-child(3){
+      animation-delay: 0.5s;
+  }
+  @keyframes appearance {
+      from {opacity: 0;}
+      to {opacity: 1;}   
+  }*/
 }
 section img {
   width: 100%;
@@ -116,10 +129,28 @@ section .menu {
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
+  animation: appearance 1s both ease-in-out;
 }
 @media (min-width: 768px) {
   section .menu {
     margin: auto;
+  }
+}
+section .menu.entrees {
+  animation-delay: 0s;
+}
+section .menu.plats {
+  animation-delay: 0.5s;
+}
+section .menu.desserts {
+  animation-delay: 1s;
+}
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 section .line {
@@ -144,7 +175,7 @@ section .dish {
   border: transparent;
   display: flex;
   flex-direction: row;
-  animation: appearance 1s both ease-in-out;
+  /*animation: appearance 1s both ease-in-out;*/
 }
 @media (min-width: 768px) {
   section .dish {
@@ -154,26 +185,6 @@ section .dish {
 section .dish:hover .checkblock {
   width: 59px;
   visibility: visible;
-}
-section .dish:nth-child(1) {
-  animation-delay: 0s;
-}
-section .dish:nth-child(2) {
-  animation-delay: 0.25s;
-}
-section .dish:nth-child(3) {
-  animation-delay: 0.5s;
-}
-section .dish:nth-child(4) {
-  animation-delay: 0.75s;
-}
-@keyframes appearance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 section .dishcontent {
   display: flex;
