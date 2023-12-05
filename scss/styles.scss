@@ -145,9 +145,13 @@ header {
     flex-direction: column;
     width: 100%;
     margin: auto;
-    padding-bottom: 55px;
-    padding-top: 40px;
+    padding: 40px 30px 55px 30px;
+    box-sizing: border-box;
+    /*padding-bottom: 55px;
+    padding-top: 40px;*/
     & h1{
+        /*padding-left: 50px;
+        padding-right: 50px;*/
         padding-bottom: 10px;
         display: flex;
         justify-content: center;
@@ -158,7 +162,7 @@ header {
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 0px 26px 27px 34px;
+        padding-bottom: 27px;
         margin: 0;
     }
     & button {
@@ -191,7 +195,7 @@ header {
     gap: 26px;
     padding: 45px 20px 65px 20px;
     margin: auto;
-    max-width: 1120px;
+    max-width: 1080px;
     box-sizing: border-box;
     @media (min-width: 768px) {
         padding: 50px 75px;
